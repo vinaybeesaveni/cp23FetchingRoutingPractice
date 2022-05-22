@@ -1,0 +1,62 @@
+.image {
+  width: 255px;
+  height: 160px;
+  border-radius: 5px;
+}
+.list-item {
+  border: 1px solid #8e8e8e;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .list-item {
+    flex-direction: row;
+  }
+}
+.avatar-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.details-container {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .details-container {
+    order: 1;
+    margin-left: 20px;
+  }
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+.title-blog {
+  font-weight: bold;
+  margin-bottom: 0;
+  color: black;
+  font-size: 18px;
+}
+.topic {
+  color: #8e8e8e;
+  font-weight: 500;
+}
+.author {
+  color: #8e8e8e;
+  font-weight: 500;
+}
+.link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* because of <Link> we have to display properties again */
+}
